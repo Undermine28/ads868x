@@ -1,0 +1,16 @@
+[package]
+name = "ads868x"
+version = "0.1.0"
+edition = "2024"
+
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[dependencies]
+defmt = "1.0.1"
+
+[features]
+default = ["defmt"]
+defmt = []
